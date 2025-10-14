@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class BallW3: MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class BallW3: MonoBehaviour
     // This method is called by Unity whenever the ball hits something.
     [SerializeField]private void OnCollisionEnter2D(Collision2D collision)
     {
+        
         // STEP 1 -------------------------------------------------------------
         // We can access the member variables of another class using the '.' symbol.
         // For example, we can use the variabled named 'linearVelocity' on
@@ -32,7 +34,7 @@ public class BallW3: MonoBehaviour
         // STEP 9 -------------------------------------------------------------
         // After you write the GetColorMultiplier method, simply uncomment
         //      the below line.
-        //ballRenderer.color *= GetColorMultiplier(Mathf.Abs(_rigidbody.linearVelocity.x), Mathf.Abs(_rigidbody.linearVelocity.y));
+        ballRenderer.color *= GetColorMultiplier(Mathf.Abs(_rigidbody.linearVelocity.x), Mathf.Abs(_rigidbody.linearVelocity.y));
         // STEP 9 -------------------------------------------------------------
     }
 
@@ -52,11 +54,18 @@ public class BallW3: MonoBehaviour
     //      return a value of 1.5,
     //      otherwise, return a value of 1.0. 
 
-    //[SerializeField]private ??? GetColorMultiplier(??? ???, ??? ???)
-    //{
-    // write the method body here!
-
-    //}
+    private float GetColorMultiplier(float xSpeed, float ySpeed)
+    {
+        float average = (xSpeed + ySpeed) / 2;
+        if (average < _speedThreshold)
+        {
+            return 1.5f;
+        }
+        else
+        {
+            return 1.0f;
+        }
+    }
 
     // STEP 8 ------------------------------------------------------------------
 }
