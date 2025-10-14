@@ -12,17 +12,25 @@ Create future Devlog sub-headers with the three # symbols, then write your Devlo
 
 ## W3
 
-Class Activity(Table 1): 
+**Class Activity(Table 1):**
+
+**1**
 
 bool whether\_Hit(float Finger\_Hit, folat Finger\_Leave){
 
-&nbsp;	bool hit = Mathf.abs(Finger\_Hit - Should\_Hit) <= 0.1 \&\& Mathf.abs(Finger\_Leave - Should\_Leave) <= 0.1;
+ 	bool hit = Mathf.abs(Finger\_Hit - Should\_Hit) <= 0.1 \&\& Mathf.abs(Finger\_Leave - Should\_Leave) <= 0.1;
 
-&nbsp;	return hit;
+ 	return hit;
 
 }
 
-//Finger\_Hit, Finger\_Leave is the time when player's finger hits or leaves the screen, and Should\_Hit and Should\_Leave are values that are the precise time that player should touch the screen. 
+//Finger\_Hit, Finger\_Leave is the time when player's finger hits or leaves the screen, and Should\_Hit and Should\_Leave are values that are the precise time that player should touch the screen.
+
+2 Mono blahblah questions
+
+(1) a class is a blueprint and a component is the thing made from the blueprint.
+
+(2) the RGB values approaches 1, and (1, 1, 1) is white
 
 ## Open-Source Assets
 
