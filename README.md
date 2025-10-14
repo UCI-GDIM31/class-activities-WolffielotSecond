@@ -12,7 +12,17 @@ Create future Devlog sub-headers with the three # symbols, then write your Devlo
 
 ## W3
 
-TBD
+Class Activity(Table 1): 
+
+bool whether\_Hit(float Finger\_Hit, folat Finger\_Leave){
+
+&nbsp;	bool hit = Mathf.abs(Finger\_Hit - Should\_Hit) <= 0.1 \&\& Mathf.abs(Finger\_Leave - Should\_Leave) <= 0.1;
+
+&nbsp;	return hit;
+
+}
+
+//Finger\_Hit, Finger\_Leave is the time when player's finger hits or leaves the screen, and Should\_Hit and Should\_Leave are values that are the precise time that player should touch the screen. 
 
 ## Open-Source Assets
 
