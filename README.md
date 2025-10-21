@@ -42,6 +42,16 @@ Line 25 implements the translation of the player character forward or backward b
 
 
 
+\#Q1
+
+By adding the Rigid body component to the soccer and the cat. And adding the trigger on the goal.
+
+\#Q2
+
+Only that the cat rotates in a weird way, but it is fixed by locking the x and z rotation.
+
+
+
 ## Open-Source Assets
 
 ### W1
