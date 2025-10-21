@@ -34,7 +34,7 @@ bool whether\_Hit(float Finger\_Hit, folat Finger\_Leave){
 
 ## W4
 
-Line 5 is a member variable, a float variable specifically.
+Line 5 is a member variable, a float variable specifically, setting the value to 1.
 
 Line 22 computes the translation distance when the player presses W and S, the translation is input direction times speed times frame time. translation is a local variable in the method Update, which Unity process it in every frame time. Input is a class and GetAxis is a method in that class to get the player controller movement axis. \_moveSpeed is float member variable on line 5, and deltaTime is a variable in the Time class.
 
