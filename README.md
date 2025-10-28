@@ -50,7 +50,19 @@ By adding the Rigid body component to the soccer and the cat. And adding the tri
 
 Only that the cat rotates in a weird way, but it is fixed by locking the x and z rotation.
 
+## W5
 
+\#Activity 1
+
+I don't really believe that I or my teammate have any questions about vectors and transform since we've used these things in UE. The only problem is that it's hard for me to remember the syntax of the code, but I think I'll solve that myself.
+
+\#Activity 2
+
+1 The class needs a NavMeshAgent and a Transform that records the position that the deer should move.
+
+2 It should be the Start() method that runs when the game starts.
+
+3 Assign the NavMeshAgent component and makes the deer to move to the target position
 
 ## Open-Source Assets
 
