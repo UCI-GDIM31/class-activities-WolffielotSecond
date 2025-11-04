@@ -64,6 +64,22 @@ I don't really believe that I or my teammate have any questions about vectors an
 
 3 Assign the NavMeshAgent component and makes the deer to move to the target position
 
+## W6
+
+Activity1: I did \[unity coding section](https://docs.google.com/document/d/1\_oQY0junK3b37PITxN8uItEEPKJGHvci47NArvtUxiQ/edit?usp=sharing
+
+)
+
+Activity2: speed (float)
+
+Transform (player's transform)
+
+a stop chase method that disables itself
+
+a start chase method that enables itself and sets the player transform location
+
+and a update method that always moves the bat toward player by Vector2.MoveTowards
+
 ## Open-Source Assets
 
 ### W1
