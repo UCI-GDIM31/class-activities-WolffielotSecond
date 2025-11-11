@@ -80,6 +80,16 @@ a start chase method that enables itself and sets the player transform location
 
 and a update method that always moves the bat toward player by Vector2.MoveTowards
 
+## W7
+
+1. I wrote the \[Animation section](https://docs.google.com/document/d/1RbOJV14KBQmt5sQBiYGuODTakWBMyocLs59OTx8vLRQ/edit?usp=sharing)
+
+2\. The original code for Step 2 is to move the World Position of the character, it does not change when player changes direction.
+
+The correct code transform.Translate moves the character on its local axis. So it still moves on the correct direction when the player change direction.
+
+
+
 ## Open-Source Assets
 
 ### W1
